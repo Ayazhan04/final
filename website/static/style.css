@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,300;1,500;1,700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	/*border:1px solid red;*/
+}
+.block1 {
+	padding: 5px;
+}
+.block1_btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	font-family: 'Montserrat', sans-serif;
+}
+.logo a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color:black;
+	font-weight: 700;
+}
+.logo a:hover {
+	color:black;
+}
+.block1 ul {
+	margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    font-weight: 400;
+}
+.block1 ul li {
+	list-style-type: none;
+}
+.block1 ul a {
+	text-decoration: none;
+	color:black;
+}
+.block1 ul a:hover {
+	color:#ffcc00;
+	transition: linear 0.3s;
+}
+.block2{
+background-image: url('./images/a8902898-738f-4c8d-ac7a-7b0f8703137b.png');
+background-repeat: no-repeat;
+background-size: 100%;
+min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.block2_txt {
+	text-align: center;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.block2_txt h1 {
+	color:white;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+.block2_txt p {
+	color:white;
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+.block2_txt a {
+	margin-top: 20px;
+	width:100px;
+	padding: 10px;
+	border: 1px solid white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.block2_txt a:hover {
+	background-color: white;
+	color:black;
+	font-weight: 700;
+}
+.about_us {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+.about_us h1 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.about_us_atelier {
+   margin-top: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.about_us_atelier p {
+	font-size: 20px;
+	margin-left: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+.block4 {
+	padding-top: 100px;
+	padding-bottom:100px;
+}
+.services {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.services img {
+	width: 300px;
+}
+.service a {
+	display: block;
+	position: relative;
+}
+
+.service a:after {
+	content: 'Clothing repair';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	opacity: 0;
+}
+
+.service a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(icon-path);
+	opacity: 0;
+}
+
+.service a:hover:before,
+.service a:hover:after {
+	opacity: 1;
+}
+.service1 a {
+	display: block;
+	position: relative;
+}
+
+.service1 a:after {
+	content: 'Tailoring of womens clothing';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:white;
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	opacity: 0;
+}
+
+.service1 a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(icon-path);
+	opacity: 0;
+}
+
+.service1 a:hover:before,
+.service1 a:hover:after {
+	opacity: 1;
+}
+.service2 a {
+	display: block;
+	position: relative;
+}
+
+.service2 a:after {
+	content: 'Fitting mens clothing';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:white;
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	opacity: 0;
+}
+
+.service2 a:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(icon-path);
+	opacity: 0;
+}
+
+.service2 a:hover:before,
+.service2 a:hover:after {
+	opacity: 1;
+}
+.service_txt {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size:25px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.block5 {
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+.caprice {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.gas {
+	height: 400px;
+	width:300px;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:space-around;
+	text-align: center;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.04);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.gas h1 {
+	text-transform:uppercase;
+	font-size: 25px;
+}
+.gas a {
+	background-color: blue;
+	padding: 10px;
+	border-radius: 10px;
+	width:150px;
+	color:white;
+	text-decoration: none;
+}
+.gas a:hover {
+	color:white;
+}
+.block6 {
+	padding-bottom: 100px;
+}
+.block7 {
+	padding-bottom: 100px;
+}
+.gets {
+margin-top:20px;
+padding-bottom: 20px;
+}
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.form input {
+	margin-top: 40px;
+	width: 400px;
+	height: 50px;
+	border:none;
+	border:1px solid #555;
+	border-radius:5px;
+	padding-left:15px;
+	padding-right:15px;
+}
+.knopka {
+	cursor: pointer;
+}
+.clothesx {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	padding-bottom: 100px;
+}
+.card {
+	margin-top: 40px;
+}
+.mazga {
+	width: 100px;
+	display: none;
+}
+.clothesx img {
+	height: 450px;
+}
+.block1_btn .mainstream {
+	display: block;
+}

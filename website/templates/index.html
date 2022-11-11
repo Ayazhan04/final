@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="image/x-icon" href="fashion-design.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="/static/style.css">
+	<link rel="stylesheet" href="media.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <bgsound src="Alexis Ffrench - Rivers.mp3"></bgsound>
+	<title>Personna</title>
+</head>
+<body>
+	<div class="block1">
+		<div class="container">
+			<div class="block1_btn">
+				<div class="logo">
+				<h1><a href="">Personna</a></h1>
+			</div>
+			<ul>
+                <li><a href="#home" onclick="playAudio()">Home</a></li>
+				<li><a href="#about" onclick="playAudio()">About us</a></li>
+				<li><a href="#services" onclick="playAudio()">Services</a></li>
+				<li><a href="#clothes" onclick="playAudio()">Clothes</a></li>
+				<li><a href="#contact" onclick="playAudio()">Contact</a></li>
+                <li><a href="signup" id="signup">SignUp</a></li>
+			</ul>
+
+			<img class="mazga" src={{url_for('static', filename="images/Hamburger_icon.svg.png")}} alt="">
+			</div>
+		</div>
+	</div>
+
+
+	<div id="home" class="block2">
+		<div class="container">
+			<div class="block2_txt">
+				<h1>We are making your dream come true!</h1>
+				<p>Order quality clothes only from us.</p>
+				<a  href="#contact">To order</a>
+			</div>
+		</div>
+	</div>
+	<div id="about" class="block3">
+		<div class="container">
+			<div class="about_us">
+				<h1>About us</h1>
+				<p>Here you can find out more about our beautiful atelier</p>
+			</div>
+			<div class="about_us_atelier">
+				<img src={{url_for('static', filename="images/4ee5ca72-0bdb-447c-a6b3-7875292b9cbf.png")}} alt="">
+				<p> <strong>ATELIER PERSONA </strong>is a premium-class atelier, which has been a leader in individual tailoring and repair of clothing in the CIS since 2000.The success of our atelier is a combination of experience and new technologies, attentive attitude to customers and love for their work. We enjoy our profession. Dozens of our regular customers come to us every day, they chose us for responsible, high-quality and conscientious work. We will be glad to see you among our customers, we are sure that you will appreciate the work of the atelier.The form of clothing may depend on various factors, including the characteristics of the figure, character, age, work activity, the time of year, the environment and other human traits, and other factors. For people who are demanding about their appearance, and there is our clothing repair shop.In our tailoring studio, you can order individual tailoring, tailoring of evening dresses and corporate clothing, tailoring of large-sized clothes and maternity clothes, tailoring of men's, women's and children's clothing, tailoring of outerwear (jackets, coats, raincoats, sheepskin coats, fur coats), sewing curtains and covers for furniture, blankets, and we also accept orders for sewing clothes for animals.</p>
+			</div>
+		</div>
+	</div>
+	<div id="services" class="block4">
+		<div class="container">
+			<div class="about_us services">
+				<h1>Services</h1>
+				<p>Services that we can do for you</p>
+			</div>
+			<div class="services">
+				<div class="service" id="service">
+					<a href="">
+						<img src={{url_for('static', filename="images/64804a3f-42f3-456f-9458-2ddff917f393.png")}} alt="">
+					</a>
+				</div>
+					<div class="service1" id="service1">
+					<a href="">
+						<img src={{url_for('static', filename="images/b9c84e42-785c-4c62-ab79-a6b873d7663f_1.png")}} alt="">
+					</a>
+				</div>
+					<div class="service2" id="service2">
+					<a href="">
+						<img src={{url_for('static', filename="images/bf532b66-768f-49be-b017-d8d0fe8f7d73_1.png")}} alt="">
+					</a>
+				</div>
+			</div>
+			<div class="service_txt">
+				<p>The masters of our atelier are ready to offer you urgent repair of clothing, repair of knitwear, repair, as well as a complete re-cut, with a change in style and the addition of new design solutions for fur coats, sheepskin coats and other outerwear, and leather clothing, costume repair, artistic darning, fitting wedding, graduation and evening dresses, using the most modern methods, materials and equipment. Special discount systems have been introduced for regular customers. Orders are executed on time and in strict accordance with your wishes.</p>
+			</div>
+		</div>
+	</div>
+	<div id="clothes" class="block5">
+		<div class="container">
+			<div class="about_us clothes">
+				<h1>Clothes</h1>
+				<p>Here you can see the types of clothes for your taste</p>
+			</div>
+
+       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="men.html" target="blank"><img src={{url_for('static', filename="images/pexels-serge-goldfarb-10692569.png")}} class="d-block w-100" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Clothing for men</h5>
+        <p>Here you will find a beautiful catalog for men</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="women.html" target="blank"><img src={{url_for('static', filename="images/1 (1).png")}} class="d-block w-100" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Clothing for women</h5>
+        <p>Here you will find a beautiful catalog for women</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="kids.html" target="blank"><img src={{url_for('static', filename="images/2.png")}} class="d-block w-100" alt="..."></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Clothing for kids</h5>
+        <p>Here you will find a beautiful catalog for kids</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="service_txt">
+	<p>High-quality products and good fabrics are sewn at the factory, however, they are not sewn according to standard but according to individual standards.
+It is possible to choose a product using the example of ready-made ones.
+You can complement the presented design at the request of the client (change the details of clothing, choose another fabric) or create your own design exclusively in an interactive visual designer</p>
+</div>
+		</div>
+	</div>
+<div class="block6" id="pricelist">
+	<div class="container">
+		<div class="about_us clothes">
+				<h1>Pricelist</h1>
+				<p>Here you can see the types of clothes for your taste</p>
+			</div>
+		<div class="caprice">
+      <div class="gas">
+        <h1>For children</h1>
+        <img src={{url_for('static', filename="images/Shape 1 copy.png")}} alt="">
+        <h2>16$</h2>
+         <img src={{url_for('static', filename="images/Shape 1 copy.png")}} alt="">
+        <p>Tailoring only for children under 15 years of age</p>
+        <a href="#contact">BUY NOW</a>
+      </div>
+          <div class="gas">
+        <h1>For men/women</h1>
+        <img src={{url_for('static', filename="images/Shape 1 copy.png")}} alt="">
+        <h2>30$</h2>
+         <img src="images/Shape 1 copy.png" alt="">
+        <p>Tailoring for men and women</p>
+        <a href="#contact">BUY NOW</a>
+      </div>
+          <div class="gas">
+        <h1>VIP package</h1>
+        <img src="images/Shape 1 copy.png" alt="">
+        <h2>45$</h2>
+         <img src="images/Shape 1 copy.png" alt="">
+        <p>In this package you can find tailoring for the whole family</p>
+        <a href="#contact">BUY NOW</a>
+      </div>
+    </div>
+	</div>
+</div>
+
+<div id="contact" class="block7">
+	<div class="container">
+				<div class="about_us clothes">
+				<h1>Contact</h1>
+				<p>You can leave a request right here!</p>
+			</div>
+			<div class="gets">
+  <div class="form wow animate__animated animate__lightSpeedInRight">
+    <input class="name" type="text" placeholder="Your name">
+    <input class="lastname" type="text" placeholder="Your Lastname">
+    <input class="subject" type="text" placeholder="Your number">
+    <input class="company" type="text" placeholder="Your address">
+    <input class="knopka" type="submit">
+  </div>
+</div>
+	</div>
+</div>
+<footer>
+	<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <!-- <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div> -->
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>PERSONNA
+          </h6>
+          <p>
+            Our atelier provides you with a wide range of clothing and tailoring
+        </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#service" class="text-reset">Clothing repair</a>
+          </p>
+          <p>
+            <a href="#service1" class="text-reset">Tailoring of womens clothing</a>
+          </p>
+          <p>
+            <a href="#service2" class="text-reset">Fitting mens clothing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset"></a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#home" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#about" class="text-reset">About us</a>
+          </p>
+          <p>
+            <a href="#services" class="text-reset">Services</a>
+          </p>
+          <p>
+            <a href="#pricelist" class="text-reset">Pricelist</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Nur-Sultan, NU 00005, KZ</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@personna.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 7 747 866 5671</p>
+          <p><i class="fas fa-print me-3"></i> + 7 778 860 1654</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Personna.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+</html>
